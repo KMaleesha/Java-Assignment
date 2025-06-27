@@ -30,6 +30,21 @@ I have used Intellij idea to build this project i will guide according to that. 
 4. go to the main class and right click and run the project.
 5. you can configure project sdk in project structure form files. (if you haven't configure them).
 
+# Created Endpoints
+* Create - `http://localhost:8080/api/devices`
+* Get all - `http://localhost:8080/api/devices`
+* Get by id - `http://localhost:8080/api/devices/{id}`
+* Update - `http://localhost:8080/api/devices/{id}`
+* Delete - `http://localhost:8080/api/devices/{id}`
+
+## Example JSON for testing
+`{
+    "id": "DEV001",
+    "name": "Device 1",
+    "type": "Sensor",
+    "status": "ACTIVE"
+}`
+
 # Endpoint testing using postman.
 
 Create a new Device
