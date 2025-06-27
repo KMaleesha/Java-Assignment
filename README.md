@@ -1,5 +1,7 @@
-Java Assignment
-Develop a RESTful API for managing IoT devices, focusing on core Java development skills and understanding of REST principles.
+# Java Assignment
+In this repositor I have Develop a RESTful API including create, read, delete, and update operations to manage IoT devices, focusing on core Java development.
+
+
 
 #Created API
 #How to Run
