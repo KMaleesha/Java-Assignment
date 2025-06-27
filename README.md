@@ -1,10 +1,23 @@
-# Java Assignment
-In this repositor I have Develop a RESTful API including create, read, delete, and update operations to manage IoT devices, focusing on core Java development.
+# Device Management API
+This repository contains a RESTful API developed using core Java to manage IoT devices. It supports full CRUD (Create, Read, Update, Delete) operations and is designed to demonstrate fundamental backend development skills without relying on external databases.
+
+# Key Features
+* CRUD operations - Design and implementation of a RESTful API that allows users to perform Create, Read, Update, and Delete operations on IoT devices.
+* Data Persistence - Uses an in-memory data structure (HashMap) to store and manage device information and ensures thread safety during concurrent access and modification of the data (Synchronized method).
+* Unit Testing - Includes unit tests for API endpoints to verify functionality, ensure correctness, and maintain reliability.
+
+  Example for Unit testing
+  ![image](https://github.com/user-attachments/assets/4963cfc5-5c37-418d-bd0e-b3a0cb3882ba)
+
+# Technology Stack 
+* Core java
+* Junit
+* In memory database.
+
+# How to build and Run 
 
 
-
-#Created API
-#How to Run
+# Endpoint testing using postman.
 
 Create a new Device
 ![image](https://github.com/user-attachments/assets/198fce3d-e2ae-417e-a094-df4e9f9209b0)
