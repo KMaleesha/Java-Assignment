@@ -16,6 +16,19 @@ This repository contains a RESTful API developed using core Java to manage IoT d
 
 # How to build and Run 
 
+I have used Intellij idea to build this project i will guide according to that. you can use any idea to build and run this project.
+
+## Prerequisites
+* Java 8 or higher (uses com.sun.net.httpserver)
+* IntelliJ IDEA (Community or Ultimate Edition)
+* Git (optional, for version control)
+
+## Setup and Build Instructions
+1. Clone the project.
+2. then open the project in idea.
+3. downlod the dependancies in the pom.xml file (if not download automatically).
+4. go to the main class and right click and run the project.
+5. you can configure project sdk in project structure form files. (if you haven't configure them).
 
 # Endpoint testing using postman.
 
