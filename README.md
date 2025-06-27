@@ -1,7 +1,7 @@
 # Device Management API
 This repository contains a RESTful API developed using core Java to manage IoT devices. It supports full CRUD (Create, Read, Update, Delete) operations and is designed to demonstrate fundamental backend development skills without relying on external databases.
 
-# Key Features
+## Key Features
 * CRUD operations - Design and implementation of a RESTful API that allows users to perform Create, Read, Update, and Delete operations on IoT devices.
 * Data Persistence - Uses an in-memory data structure (HashMap) to store and manage device information and ensures thread safety during concurrent access and modification of the data (Synchronized method).
 * Unit Testing - Includes unit tests for API endpoints to verify functionality, ensure correctness, and maintain reliability.
@@ -9,35 +9,35 @@ This repository contains a RESTful API developed using core Java to manage IoT d
   Example for Unit testing
   ![image](https://github.com/user-attachments/assets/4963cfc5-5c37-418d-bd0e-b3a0cb3882ba)
 
-# Technology Stack 
+## Technology Stack 
 * Core java
 * Junit
 * In memory database.
 
-# How to build and Run 
+## How to build and Run 
 
 I have used Intellij idea to build this project i will guide according to that. you can use any idea to build and run this project.
 
-## Prerequisites
+### Prerequisites
 * Java 8 or higher (uses com.sun.net.httpserver)
 * IntelliJ IDEA (Community or Ultimate Edition)
 * Git (optional, for version control)
 
-## Setup and Build Instructions
+### Setup and Build Instructions
 1. Clone the project.
 2. then open the project in idea.
 3. downlod the dependancies in the pom.xml file (if not download automatically).
 4. go to the main class and right click and run the project.
 5. you can configure project sdk in project structure form files. (if you haven't configure them).
 
-# Created Endpoints
+## Created Endpoints
 * Create - `http://localhost:8080/api/devices`
 * Get all - `http://localhost:8080/api/devices`
 * Get by id - `http://localhost:8080/api/devices/{id}`
 * Update - `http://localhost:8080/api/devices/{id}`
 * Delete - `http://localhost:8080/api/devices/{id}`
 
-## Example JSON for testing
+### Example JSON for testing
 `{
     "id": "DEV001",
     "name": "Device 1",
@@ -45,7 +45,7 @@ I have used Intellij idea to build this project i will guide according to that. 
     "status": "ACTIVE"
 }`
 
-# Endpoint testing using postman.
+## Endpoint testing using postman.
 
 Create a new Device
 ![image](https://github.com/user-attachments/assets/198fce3d-e2ae-417e-a094-df4e9f9209b0)
