@@ -74,9 +74,9 @@ public class Device {
     }
 
     public boolean isValid() {
-        return id == null || id.trim().isEmpty() ||
-                name == null || name.trim().isEmpty() ||
-                type == null || type.trim().isEmpty() ||
-                status == null;
+        return id != null && !id.trim().isEmpty() &&
+                name != null && !name.trim().isEmpty() &&
+                type != null && !type.trim().isEmpty() &&
+                status != null;
     }
 }

@@ -11,23 +11,23 @@ public class DeviceRepository {
 
     private final Map<String, Device> deviceMap = new HashMap<>();
 
-    public void save(Device device) {
+    public synchronized void save(Device device) {
         deviceMap.put(device.getId(), device);
     }
 
-    public Device findById(String id){
+    public synchronized Device findById(String id){
         return deviceMap.get(id);
     }
 
-    public List<Device> findAll() {
+    public synchronized List<Device> findAll() {
         return new ArrayList<>(deviceMap.values());
     }
 
-    public void deleteById(String id){
+    public synchronized void deleteById(String id){
         deviceMap.remove(id);
     }
 
-    public boolean existsById(String id){
+    public synchronized boolean existsById(String id){
         return deviceMap.containsKey(id);
     }
 }

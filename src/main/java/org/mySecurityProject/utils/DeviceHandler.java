@@ -77,7 +77,7 @@ public class DeviceHandler implements HttpHandler {
             String requestBody = HttpUtils.getRequestBody(exchange);
             Device device = JsonParser.parseDevice(requestBody);
 
-            if (device.isValid()) {
+            if (!device.isValid()) {
                 HttpUtils.sendResponse(exchange, 400, JsonParser.createErrorResponse("Invalid device data"));
                 return;
             }
@@ -101,7 +101,7 @@ public class DeviceHandler implements HttpHandler {
                 String requestBody = HttpUtils.getRequestBody(exchange);
                 Device updatedDevice = JsonParser.parseDevice(requestBody);
 
-                if (updatedDevice.isValid()) {
+                if (!updatedDevice.isValid()) {
                     HttpUtils.sendResponse(exchange, 400, JsonParser.createErrorResponse("Invalid device data"));
                     return;
                 }

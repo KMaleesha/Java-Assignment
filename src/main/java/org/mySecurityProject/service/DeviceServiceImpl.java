@@ -15,6 +15,9 @@ public class DeviceServiceImpl implements DeviceService{
 
     @Override
     public void createDevice(Device device) {
+        if (repository.existsById(device.getId())) {
+            throw new IllegalArgumentException("Device already exists with ID: " + device.getId());
+        }
         repository.save(device);
     }
 
@@ -39,6 +42,9 @@ public class DeviceServiceImpl implements DeviceService{
 
     @Override
     public void deleteDevice(String id) {
+        if (!repository.existsById(id)) {
+            throw new IllegalArgumentException("Device not found with ID: " + id);
+        }
         repository.deleteById(id);
     }
 }

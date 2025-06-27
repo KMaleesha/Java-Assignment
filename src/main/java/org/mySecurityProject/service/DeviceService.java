@@ -10,5 +10,4 @@ public interface DeviceService {
     List<Device> getAllDevices();
     void updateDevice(String id, Device updatedDevice);
     void deleteDevice(String id);
-
 }
